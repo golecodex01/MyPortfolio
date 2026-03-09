@@ -8,7 +8,7 @@ let val;
 window.onscroll =function(){
     if(document.documentElement.scrollTop > 20 ){
         nav.classList.add("sticky");
-        scrollBtn.style.display = "block ";
+        scrollBtn.style.display = "block";
     }
     else{
         nav.classList.remove("sticky");
@@ -40,9 +40,9 @@ cancelBtn.onclick = function(){
 }
 
 //Side navigation bar close while we click in navigation links 
-let navLinks = document.querySelectorAll(".menu li a ");
+let navLinks = document.querySelectorAll(".menu li a");
 for(var i=0 ;i<navLinks.length;i++){
-    navLinks[i],addEventListener("click",function(){
+    navLinks[i].addEventListener("click",function(){
         navBar.classList.remove("active");
         menuBtn.style.opacity="1";
         menuBtn.style.pointerEvents="auto";
